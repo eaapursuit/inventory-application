@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Inventory App</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <img src="./imgs/luxuryCarImg.png" />
+        <h1>Car Inventory App</h1>
+        <nav class="header-links">
+            <a href="menu.html">Menu</a>
+            <a href="about_us.html">About Us</a>
+        </nav>
+    </header>
+    <button class="shipping-btn"> Check Out Order</button>
+    <form id="addNewCar">
+        <div>
+            <label> Car Make + Car Model</label>
+            <input type="text" name="carMakeModel" />
+        </div>
+        <div>
+            <label> Year </label>
+            <input type="text" name="carYear" />
+        </div>
+        
+        <div>
+            <label> Price </label>
+            <input type="text" name="carPrice">
+        </div>
+        <div>
+            <label> Color</label>
+            <input type="color" name="carColor"/>
+        </div>
+        <div>
+            <label>Condition</label>
+            <select id="condition" name="carCondition" required>
+                <option value="">-- Select a category --</option>
+                <option value="excellent">Excellent</option>
+                <option value="good">Good</option>
+              </select>
+        </div>
+        <div>
+            <label> Image URL</label>
+            <input type="text" name="carImageUrl"/>
+        </div>
+        <div>
+            <label> Stock </label>
+            <input type="number" min="5" max="10" step="1" name="carStock" />
+        </div>
+        <!-- <input type="submit" /> -->
+        <button type="submit" >Submit</button>
+        <button type="button" onclick="resetForm()">Reset</button>
+    </form>
+    <main>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
